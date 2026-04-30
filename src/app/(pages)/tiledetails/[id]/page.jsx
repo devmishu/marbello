@@ -1,6 +1,11 @@
+import { getTileById } from '@/lib/api/getTileById';
 import React from 'react';
 
-const TileDetailsPage = () => {
+const TileDetailsPage = async ({ params }) => {
+    const {id} = await params;
+    const tileDetails = await getTileById(id);
+    console.log(tileDetails);
+
     return (
         <div className="min-h-screen bg-gray-50 font-sans">
             {/* Navigation Space - Just for layout consistency */}
@@ -27,7 +32,7 @@ const TileDetailsPage = () => {
                     {/* Details Content Section */}
                     <div className="mt-10 px-4 sm:px-0 sm:mt-16 lg:mt-0">
                         <h1 className="text-4xl font-extrabold tracking-tight text-gray-900">
-                            Ceramic Blue Tile
+                            {tileDetails.title}
                         </h1>
 
                         <div className="mt-3">

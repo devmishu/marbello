@@ -1,9 +1,13 @@
 "use client"
 import { authClient } from '@/lib/auth-client';
+import Link from 'next/link';
+import { redirect } from 'next/navigation';
 import React from 'react';
+import { FcGoogle } from 'react-icons/fc';
+import { toast } from 'react-toastify';
 
 const RegisterPage = () => {
-    const handleFormSubmit = async (e) => {
+    const handleRegister = async (e) => {
         e.preventDefault();
         const name = e.target.name.value;
         const email = e.target.email.value;
@@ -21,32 +25,56 @@ const RegisterPage = () => {
         });
 
         console.log({ data, error });
+
+        if (error) {
+            toast.error(error.message)
+        }
+        else {
+            toast.success("Successfully Registered!");
+            redirect("/login");
+        }
     }
 
-    
+    const handleRegisterGoogle = async () => {
 
+        const data = await authClient.signIn.social({
+            provider: "google",
+            callbackURL: "/"
+        });
+    }
 
     return (
-        <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-            <div className="card-body">
-                <form onSubmit={handleFormSubmit}>
-                    <fieldset className="fieldset">
-                        <label className="label" htmlFor='name'>Name</label>
-                        <input type="text" name='name' id='name' className="input" placeholder="Enter your name" />
+        <div className='min-h-[70vh] flex flex-col justify-center items-center'>
+            <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div className="card-body">
+                    <h2 className='text-center font-bold text-2xl'>Create Your MERBELLO Acount</h2>
 
-                        <label className="label" htmlFor='image'>Image Url</label>
-                        <input type="url" name='image' id='image' className="input" placeholder="Enter your image url" />
+                    <button onClick={handleRegisterGoogle} className='btn btn-outline btn-primary hover:bg-transparent hover:text-primary hover:shadow-none my-5 '> <FcGoogle /> Register with google</button>
 
-                        <label className="label" htmlFor='email'>Email</label>
-                        <input type="email" name='email' id='email' className="input" placeholder="Enter your email" />
+                    <form onSubmit={handleRegister}>
+                        <fieldset className="fieldset">
+                            <label className="label" htmlFor='name'>Name</label>
+                            <input type="text" name='name' id='name' className="input w-full" placeholder="Enter your name" />
 
-                        <label className="label" htmlFor='password'>Password</label>
-                        <input type="password" name='password' id='password' className="input" placeholder="Enter  Password" />
-                        <button  type='submit' className="btn btn-neutral mt-4">Regester</button>
-                    </fieldset>
-                </form>
+                            <label className="label" htmlFor='image'>Image Url</label>
+                            <input type="url" name='image' id='image' className="input w-full" placeholder="Enter your image url" />
+
+                            <label className="label" htmlFor='email'>Email</label>
+                            <input type="email" name='email' id='email' className="input w-full" placeholder="Enter your email" />
+
+                            <label className="label" htmlFor='password'>Password</label>
+                            <input type="password" name='password' id='password' className="input w-full" placeholder="Enter  Password" />
+                            <button type='submit' className='mt-5 btn btn-outline btn-primary hover:bg-transparent hover:text-primary hover:shadow-none'>Regester</button>
+                        </fieldset>
+                    </form>
+
+                    <div className='flex justify-center pb-5'>
+                        <span className='text-gray-500'>Alardy have an acount?</span><Link href="/login" className='text-primary'>Login</Link>
+                    </div>
+                </div>
             </div>
         </div>
+
     );
 };
 
