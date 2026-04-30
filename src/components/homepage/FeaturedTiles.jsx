@@ -4,7 +4,6 @@ import TilesCard from '../ui/TilesCard';
 
 const FeaturedTiles = async () => {
     const featuredTiles = await getFeaturedTiles();
-    console.log(featuredTiles);
 
     return (
         <div>

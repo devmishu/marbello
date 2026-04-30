@@ -4,7 +4,6 @@ import React from 'react';
 const TileDetailsPage = async ({ params }) => {
     const {id} = await params;
     const tileDetails = await getTileById(id);
-    console.log(tileDetails);
 
     return (
         <div className="min-h-screen bg-gray-50 font-sans">

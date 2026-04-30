@@ -3,7 +3,7 @@ import React from 'react';
 
 const HeroBanner = () => {
     return (
-        <div className="relative min-h-[60vh] hero rounded-xl bg-[url('/images/herobanner.png')] bg-center bg-cover">
+        <div className="relative min-h-[60vh] hero rounded-xl bg-[url('/images/herobanner2.png')] bg-center bg-cover">
 
             <div className="absolute inset-0 bg-black/20 rounded-xl"></div>
 

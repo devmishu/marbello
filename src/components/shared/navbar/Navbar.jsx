@@ -1,8 +1,11 @@
 import Link from 'next/link';
 import React from 'react';
 import Navmenu from './Navmenu';
+import RightSidebar from './RightSidebar';
 
 const Navbar = () => {
+
+
     return (
         <div className='bg-base-100  shadow-sm sticky top-0 z-50 '>
             <div className="navbar container mx-auto px-5">
@@ -24,11 +27,10 @@ const Navbar = () => {
                         <Navmenu />
                     </ul>
                 </div>
-                <div className="navbar-end  gap-3">
-                    <Link href="/register" className="btn btn-primary">Register</Link>
-                    <Link href="/login" className="btn btn-primary">Login</Link>
-                </div>
+
+                <RightSidebar />
             </div>
+
         </div>
 
     );

@@ -11,8 +11,6 @@ const LoginPage = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
 
-        console.log(email, password);
-
         const { data, error } = await authClient.signIn.email({
             email,
             password,
