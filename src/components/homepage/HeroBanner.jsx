@@ -5,11 +5,11 @@ const HeroBanner = () => {
     return (
         <div className="relative min-h-[60vh] hero rounded-xl bg-[url('/images/herobanner.png')] bg-center bg-cover">
 
-            <div className="absolute inset-0 bg-black/5 rounded-xl"></div>
+            <div className="absolute inset-0 bg-black/20 rounded-xl"></div>
 
             <div className="hero-content text-center relative z-10">
                 <div className="max-w-md">
-                    <h1 className="text-5xl font-bold text-primary">
+                    <h1 className="text-5xl font-bold text-white">
                         Discover Your Perfect Aesthetic
                     </h1>
 

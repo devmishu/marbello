@@ -4,7 +4,7 @@ import Navmenu from './Navmenu';
 
 const Navbar = () => {
     return (
-        <div className='bg-base-100  shadow-sm '>
+        <div className='bg-base-100  shadow-sm sticky top-0 z-50 '>
             <div className="navbar container mx-auto px-5">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -17,7 +17,7 @@ const Navbar = () => {
                             <Navmenu />
                         </ul>
                     </div>
-                    <Link href="/" className='text-2xl font-bold'>MERBELLO</Link>
+                    <Link href="/" className='text-2xl text-primary font-bold'>MERBELLO</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
