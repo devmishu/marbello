@@ -6,12 +6,8 @@ const TileDetailsPage = async ({ params }) => {
     const tileDetails = await getTileById(id);
 
     return (
-        <div className="min-h-screen bg-gray-50 font-sans">
-            {/* Navigation Space - Just for layout consistency */}
-            <nav className="h-16 bg-white border-b border-gray-100 flex items-center px-8">
-                <span className="text-[#4f46e5] font-bold text-xl tracking-tight">MERBELLO</span>
-            </nav>
-
+        <div className="container mx-auto px-5 min-h-screen bg-gray-50 font-sans">
+        
             <main className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
                 <div className="lg:grid lg:grid-cols-2 lg:gap-x-12 items-start">
 

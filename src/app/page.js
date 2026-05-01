@@ -8,15 +8,11 @@ export default function Home() {
   return (
     <>
       <HeroBanner />
-      {/* <Marquee>
-        <p>
-          React Fast Marquee
-          React Fast Marquee is a lightweight React component that harnesses the power of CSS animations to create silky smooth marquees.
 
-        </p>
-      </Marquee> */}
-      <NewArrivals />
-      <FeaturedTiles />
+      <div className="container mx-auto px-5">
+        <NewArrivals />
+        <FeaturedTiles />
+      </div>
     </>
   );
 }
