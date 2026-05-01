@@ -21,7 +21,7 @@ const TilesCard = ({ image, title, id }) => {
                 <h2 className="card-title text-2xl">{title}</h2>
                 <div className="card-actions">
                     <Link href={`tiledetails/${id}`}>
-                        <button className="btn btn-primary">View Details</button>
+                        <button className="btn btn-primary rounded-full">View Details</button>
                     </Link>
                 </div>
             </div>

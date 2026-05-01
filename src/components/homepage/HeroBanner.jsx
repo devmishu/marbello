@@ -19,7 +19,7 @@ const HeroBanner = () => {
                     </p>
 
                     <Link href="/alltiles">
-                        <button className="btn btn-primary">Browse Now</button>
+                        <button className="btn btn-primary rounded-full">Browse Now</button>
                     </Link> 
                 </div>
             </div>

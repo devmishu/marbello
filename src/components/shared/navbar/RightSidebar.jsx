@@ -1,19 +1,15 @@
 "use client"
 import { signOut, useSession } from '@/lib/auth-client';
+import { LogIn, LogOut, UserRoundKey } from 'lucide-react';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
-import React from 'react';
 
 const RightSidebar = () => {
     const logdinuser = useSession();
     const isPending = logdinuser.isPending;
-    // console.log(isPending);
 
     const user = logdinuser?.data?.user;
-    // console.log(user);
 
-    // console.log(logdinuser);
-    
     const handleLogout = () => {
         signOut();
         redirect("/");
@@ -37,11 +33,14 @@ const RightSidebar = () => {
                                         />
                                     </div>
                                 </Link>
-                                <button onClick={() => handleLogout()} className="btn btn-primary">Logout</button>
-                            </div > : <>
-                                <Link href="/register" className="btn btn-primary">Register</Link>
-                                <Link href="/login" className="btn btn-primary">Login</Link>
-                            </>
+                                <button onClick={() => handleLogout()} className="btn btn-primary rounded-full"><LogOut size="19" className='hidden sm:block' /><span className='sm:text-[18px] '> Logout</span> </button>
+                            </div > :
+                                <div className='flex gap-2 border p-1 border-gray-200 rounded-full '>
+                                    <Link href="/register" className="btn btn-primary rounded-full">
+                                        <UserRoundKey size="19" className='hidden sm:block' /><span className='sm:text-[18px] '> Register</span>
+                                    </Link>
+                                    <Link href="/login" className="btn btn-primary rounded-full"><LogIn size="19" className='hidden sm:block' /><span className='sm:text-[18px] '> Login</span></Link>
+                                </div>
                         }
 
                     </div>

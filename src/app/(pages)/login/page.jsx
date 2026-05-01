@@ -1,5 +1,6 @@
 "use client"
 import { authClient } from '@/lib/auth-client';
+import { Lock, Mail } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
 import { FcGoogle } from 'react-icons/fc';
@@ -40,18 +41,24 @@ const LoginPage = () => {
                     <form onSubmit={handleLogin}>
                         <fieldset className="fieldset">
 
-                            <label className="label" htmlFor='email'>Email</label>
-                            <input type="email" name='email' id='email' className="input w-full" placeholder="Enter your email" />
+                            <label className="label text-[16px]" htmlFor='email'>Email</label>
+                            <div className="input w-full outline-none rounded-full">
+                                <Mail />
+                                <input type="email" name='email' id='email' placeholder="Enter your email" />
+                            </div>
 
-                            <label className="label" htmlFor='password'>Password</label>
-                            <input type="password" name='password' id='password' className="input w-full" placeholder="Enter  Password" />
-                            <button type='submit' className='mt-5 btn btn-outline btn-primary hover:bg-transparent hover:text-primary hover:shadow-none'>Login</button>
+                            <label className="label text-[16px]" htmlFor='password '>Password</label>
+                            <div className="input w-full outline-none rounded-full">
+                                <Lock />
+                                <input type="password" name='password' id='password' className='outline-none' placeholder="Enter  Password" />
+                            </div>
+                            <button type='submit' className='mt-5 btn btn-outline btn-primary hover:bg-transparent hover:text-primary hover:shadow-none rounded-full'>Login</button>
                         </fieldset>
                     </form>
 
                     <span className='text-center my-3 '>Or</span>
 
-                    <button onClick={handleLoginGoogle} className='btn btn-outline btn-primary hover:bg-transparent hover:text-primary hover:shadow-none '> <FcGoogle /> Login with google</button>
+                    <button onClick={handleLoginGoogle} className='btn btn-outline btn-primary hover:bg-transparent hover:text-primary hover:shadow-none rounded-full '> <FcGoogle /> Login with google</button>
 
                     <div className='flex justify-center pb-5'>
                         <span className='text-gray-500'>Dont have an acount?</span><Link href="/register" className='text-primary'>Register</Link>

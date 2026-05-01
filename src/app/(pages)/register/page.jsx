@@ -1,5 +1,6 @@
 "use client"
 import { authClient } from '@/lib/auth-client';
+import { Link2, Lock, Mail, User2 } from 'lucide-react';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import React from 'react';
@@ -47,22 +48,34 @@ const RegisterPage = () => {
                 <div className="card-body">
                     <h2 className='text-center font-bold text-2xl'>Create Your MERBELLO Acount</h2>
 
-                    <button onClick={handleRegisterGoogle} className='btn btn-outline btn-primary hover:bg-transparent hover:text-primary hover:shadow-none my-5 '> <FcGoogle /> Register with google</button>
+                    <button onClick={handleRegisterGoogle} className='btn btn-outline btn-primary hover:bg-transparent hover:text-primary hover:shadow-none my-5 rounded-full '> <FcGoogle /> Register with google</button>
 
                     <form onSubmit={handleRegister}>
                         <fieldset className="fieldset">
                             <label className="label" htmlFor='name'>Name</label>
-                            <input type="text" name='name' id='name' className="input w-full" placeholder="Enter your name" />
+                            <div className="input w-full outline-none rounded-full">
+                                <User2 />
+                                <input type="text" name='name' id='name' placeholder="Enter your name" />
+                            </div>
 
                             <label className="label" htmlFor='image'>Image Url</label>
-                            <input type="url" name='image' id='image' className="input w-full" placeholder="Enter your image url" />
+                            <div className="input w-full outline-none rounded-full">
+                                <Link2 />
+                                <input type="url" name='image' id='image' className="input w-full" placeholder="Enter your image url" />
+                            </div>
 
                             <label className="label" htmlFor='email'>Email</label>
-                            <input type="email" name='email' id='email' className="input w-full" placeholder="Enter your email" />
+                            <div className="input w-full outline-none rounded-full">
+                                <Mail />
+                                <input type="email" name='email' id='email' placeholder="Enter your email" />
+                            </div>
 
                             <label className="label" htmlFor='password'>Password</label>
-                            <input type="password" name='password' id='password' className="input w-full" placeholder="Enter  Password" />
-                            <button type='submit' className='mt-5 btn btn-outline btn-primary hover:bg-transparent hover:text-primary hover:shadow-none'>Regester</button>
+                            <div className="input w-full outline-none rounded-full">
+                                <Lock />
+                                <input type="password" name='password' id='password' className='outline-none' placeholder="Enter  Password" />
+                            </div>
+                            <button type='submit' className='mt-5 btn btn-outline btn-primary hover:bg-transparent hover:text-primary hover:shadow-none rounded-full'>Regester</button>
                         </fieldset>
                     </form>
 

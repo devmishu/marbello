@@ -45,14 +45,14 @@ const EditProfileForm = ({ user }) => {
                     onClick={() =>
                         document.getElementById("userDataUpdate").showModal()
                     }
-                    className="w-full bg-[#4f46e5] text-white py-2.5 rounded-lg font-semibold hover:bg-[#4338ca]"
+                    className="w-full bg-[#4f46e5] text-white py-2.5  font-semibold hover:bg-[#4338ca] rounded-full"
                 >
                     Edit Profile
                 </button>
 
                 <button
                     onClick={handleLogout}
-                    className="w-full bg-white text-red-500 border border-red-100 py-2.5 rounded-lg font-semibold hover:bg-red-50"
+                    className="w-full text-primary   border border-primary py-2.5 rounded-full font-semibold hover:cursor-pointer"
                 >
                     Logout
                 </button>
