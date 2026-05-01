@@ -7,11 +7,13 @@ import React from 'react';
 const RightSidebar = () => {
     const logdinuser = useSession();
     const isPending = logdinuser.isPending;
-    console.log(isPending);
+    // console.log(isPending);
 
     const user = logdinuser?.data?.user;
-    console.log(user);
+    // console.log(user);
 
+    // console.log(logdinuser);
+    
     const handleLogout = () => {
         signOut();
         redirect("/");

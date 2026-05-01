@@ -5,7 +5,6 @@ import React from 'react';
 const AlltilesPage = async () => {
     const allTiles = await getAllTiles();
 
-
     return (
         <div>
             <div className="join w-full flex ">
@@ -29,6 +28,7 @@ const AlltilesPage = async () => {
                         key={at.id}
                         title={at.title}
                         id={at.id}
+                        image={at.image}
                     />)
                 }
             </div>

@@ -1,13 +1,14 @@
 import Link from 'next/link';
 import React from 'react';
 
-const TilesCard = ({ image, title,id }) => {
+const TilesCard = ({ image, title, id }) => {
+
 
     return (
         <div className="card bg-base-100  shadow-sm p-2">
             <figure className="px-5 pt-5">
                 <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    src={image}
                     alt="Shoes"
                     className="rounded-xl" />
             </figure>
