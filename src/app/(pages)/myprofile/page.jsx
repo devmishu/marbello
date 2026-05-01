@@ -1,24 +1,21 @@
-"use client"
+
 import ProfileCard from '@/components/ui/ProfileCard';
 import { signOut, useSession } from '@/lib/auth-client';
 import { redirect } from 'next/navigation';
-import React from 'react';
+import { authClient } from "@/lib/auth-client"
 
-const MyprofilePage = () => {
-    const logdinuser = useSession();
-    // console.log("MyprofilePage", logdinuser);
-    const user = logdinuser?.data?.user;
-    // const { image, name, email } = user;
-    console.log(user);
-    // console.log(image, name, email);
+const MyprofilePage = async () => {
 
-    const handleLogout = () => {
-        signOut();
-        redirect("/");
-    }
+    await authClient.updateUser({
+        image: "https://example.com/image.jpg",
+        name: "John Doe",
+    })
+
+
+
     return (
         <div>
-            <ProfileCard user={user} handleLogout={handleLogout} />
+            <ProfileCard  />
         </div>
     );
 };

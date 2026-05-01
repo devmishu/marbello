@@ -1,8 +1,19 @@
+"use client"
+import { useSession } from '@/lib/auth-client';
 import React from 'react';
 import { HiOutlineMail } from 'react-icons/hi';
+import EditProfileForm from '../myprofile/EditProfileForm';
 
-const ProfileCard = ({ user, handleLogout }) => {
-    // image, name, email
+const ProfileCard = () => {
+
+    const logdinuser = useSession();
+
+    const user = logdinuser?.data?.user;
+
+
+
+    
+
     return (
         <div className="min-h-[80vh] bg-gray-50 flex items-center justify-center p-6 ">
             {/* Profile Card Container */}
@@ -43,15 +54,7 @@ const ProfileCard = ({ user, handleLogout }) => {
                         </div>
                     </div>
 
-                    {/* Action Buttons */}
-                    <div className="mt-8 flex flex-col space-y-3">
-                        <button className="w-full bg-[#4f46e5] text-white py-2.5 rounded-lg font-semibold hover:bg-[#4338ca] transition-colors shadow-sm">
-                            Edit Profile
-                        </button>
-                        <button onClick={() => handleLogout()} className="w-full bg-white text-red-500 border border-red-100 py-2.5 rounded-lg font-semibold hover:bg-red-50 transition-colors hover:cursor-pointer">
-                            Logout
-                        </button>
-                    </div>
+                    <EditProfileForm user={user} />
                 </div>
 
             </div>

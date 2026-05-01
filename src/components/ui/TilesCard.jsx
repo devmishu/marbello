@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -7,9 +8,13 @@ const TilesCard = ({ image, title, id }) => {
     return (
         <div className="card bg-base-100  shadow-sm p-2">
             <figure className="px-5 pt-5">
-                <img
+                <Image
                     src={image}
                     alt="Shoes"
+                    width={400}
+                    height={400}
+                    placeholder="blur"
+                    blurDataURL={image}
                     className="rounded-xl" />
             </figure>
             <div className="card-body items-center text-center">
