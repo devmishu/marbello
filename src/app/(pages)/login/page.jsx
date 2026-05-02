@@ -41,13 +41,13 @@ const LoginPage = () => {
                     <form onSubmit={handleLogin}>
                         <fieldset className="fieldset">
 
-                            <label className="label text-[16px]" htmlFor='email'>Email</label>
+                            <label className="label " htmlFor='email'>Email</label>
                             <div className="input w-full outline-none rounded-full">
                                 <Mail />
                                 <input type="email" name='email' id='email' placeholder="Enter your email" />
                             </div>
 
-                            <label className="label text-[16px]" htmlFor='password '>Password</label>
+                            <label className="label " htmlFor='password '>Password</label>
                             <div className="input w-full outline-none rounded-full">
                                 <Lock />
                                 <input type="password" name='password' id='password' className='outline-none' placeholder="Enter  Password" />

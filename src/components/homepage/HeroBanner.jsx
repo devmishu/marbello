@@ -8,19 +8,18 @@ const HeroBanner = () => {
             <div className="absolute inset-0 bg-black/20 rounded-xl"></div>
 
             <div className="hero-content text-center relative z-10">
-                <div className="max-w-md">
-                    <h1 className="text-5xl font-bold text-white">
+                <div className="max-w-90 sm:max-w-110 md:max-w-160 border">
+                    <h1 className="text-[42px] sm:text-5xl md:text-7xl font-bold text-white shadow ">
                         Discover Your Perfect Aesthetic
                     </h1>
 
                     <p className="py-6 text-gray-200">
-                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                        quasi. In deleniti eaque aut repudiandae et a id nisi.
+                        Transform your living spaces with our curated selection of premium tiles. From timeless marble to modern ceramics, discover the perfect blend of durability and aesthetic excellence.
                     </p>
 
                     <Link href="/alltiles">
                         <button className="btn btn-primary rounded-full">Browse Now</button>
-                    </Link> 
+                    </Link>
                 </div>
             </div>
         </div>

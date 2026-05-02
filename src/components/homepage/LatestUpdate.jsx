@@ -1,7 +1,7 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 
-const NewArrivals = () => {
+const LatestUpdate = () => {
 
     const newArrivals = [
         {
@@ -27,8 +27,8 @@ const NewArrivals = () => {
     ];
 
     return (
-        <div className='bg-neutral py-4 px-2 flex text-white rounded-sm mt-10 items-center '>
-            <div className=' text-white text-xl rounded-sm font-semibold  min-w-37 '>
+        <div className='bg-neutral py-4 px-2 flex text-white  mt-10 items-center '>
+            <div className=' text-white text-xl rounded-sm font-semibold  min-w-40 '>
                 <span> Latest Updates:</span>
             </div>
             <div>
@@ -45,4 +45,4 @@ const NewArrivals = () => {
     );
 };
 
-export default NewArrivals;
+export default LatestUpdate;
