@@ -6,6 +6,8 @@ import React from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import { toast } from 'react-toastify';
 
+
+
 const LoginPage = () => {
     const handleLogin = async (e) => {
         e.preventDefault();
