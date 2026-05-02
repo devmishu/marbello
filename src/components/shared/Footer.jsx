@@ -1,20 +1,11 @@
+import { Mail } from 'lucide-react';
 import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+        <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 justify-between ">
             <aside>
-                <h2
-                    width="50"
-                    height="50"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    className="fill-current text-3xl font-bold"
-                >
-                    MERBELLO
-                </h2>
+                <img src="/images/footerlogo.png" alt="footer logo" className='w-50 h-20 -ml-7' />
                 <p>
                     MERBELLO Industries Ltd.
                     <br />
@@ -58,6 +49,27 @@ const Footer = () => {
                         </svg>
                     </a>
                 </div>
+            </nav>
+
+            <nav>
+                <h6 className="footer-title">Contact</h6>
+                <div className="join w-full flex relative border-gray-200 shadow-sm overflow-hidden rounded-full outline-none">
+                    <input
+
+                        type="email"
+                        placeholder="example@gmail.com"
+                        className="w-full text-black outline-none input input-bordered join-item pl-10 pr-20 rounded-full placeholder:text-gray-400"
+                    />
+                    <div className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 z-49">
+                        <Mail />
+                    </div>
+                    <button
+                        className="z-49 btn btn-primary rounded-full join-item absolute right-0 top-0 h-full"
+                    >
+                        Send Mail
+                    </button>
+                </div>
+
             </nav>
         </footer>
     );

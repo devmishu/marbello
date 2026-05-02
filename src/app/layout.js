@@ -1,5 +1,5 @@
 
-import { Inter} from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/navbar/Navbar";
 import Footer from "@/components/shared/Footer";
@@ -23,9 +23,9 @@ export default function RootLayout({ children }) {
       lang="en" data-theme="light"
       className={`${inter.className} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col ">
         <Navbar />
-        <main className="min-h-screen  my-10">
+        <main className="min-h-screen  my-10  ">
           {children}
         </main>
         <Footer />

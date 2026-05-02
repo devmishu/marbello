@@ -27,11 +27,11 @@ const LatestUpdate = () => {
     ];
 
     return (
-        <div className='bg-neutral py-4 px-2 flex text-white  mt-10 items-center '>
+        <div className=' bg-neutral py-4 px-2 flex text-white  mt-10 items-center '>
             <div className=' text-white text-xl rounded-sm font-semibold  min-w-40 '>
                 <span> Latest Updates:</span>
             </div>
-            <div>
+            <div className='flex-1 overflow-hidden'>
                 <Marquee pauseOnHover>
                     {newArrivals.map((item) => (
                         <span key={item.id}>

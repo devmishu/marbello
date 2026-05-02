@@ -2,7 +2,8 @@
 import { useSession } from '@/lib/auth-client';
 import React from 'react';
 import { HiOutlineMail } from 'react-icons/hi';
-import EditProfileForm from '../myprofile/EditProfileForm';
+
+import Link from 'next/link';
 
 const ProfileCard = () => {
 
@@ -12,7 +13,7 @@ const ProfileCard = () => {
 
 
 
-    
+
 
     return (
         <div className="min-h-[80vh] bg-gray-50 flex items-center justify-center p-6 ">
@@ -54,7 +55,24 @@ const ProfileCard = () => {
                         </div>
                     </div>
 
-                    <EditProfileForm user={user} />
+                    <div className="mt-8 flex flex-col space-y-3"> 
+                        <Link href={'/updateuser'}>
+                            <button
+
+                                className="w-full bg-[#4f46e5] text-white py-2.5  font-semibold hover:bg-[#4338ca] rounded-full hover:cursor-pointer"
+                            >
+                                Edit Profile
+                            </button>
+                        </Link>
+
+                        <button
+
+                            className="w-full text-primary   border border-primary py-2.5 rounded-full font-semibold hover:cursor-pointer"
+                        >
+                            Logout
+                        </button>
+                    </div>
+                    {/* <EditProfileForm user={user} /> */}
                 </div>
 
             </div>

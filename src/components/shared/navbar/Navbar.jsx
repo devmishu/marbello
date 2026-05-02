@@ -11,7 +11,7 @@ const Navbar = async () => {
             <div className="navbar container mx-auto px-5">
                 <div className="navbar-start">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="hover:cursor-pointer mr-3 lg:hidden">
+                        <div tabIndex={0} role="button" className="hover:cursor-pointer  lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                         </div>
                         <ul
@@ -28,7 +28,9 @@ const Navbar = async () => {
                             </li>
                         </ul>
                     </div>
-                    <Link href="/" className=' sm:text-2xl text-primary font-bold'>MERBELLO</Link>
+                    <Link href="/" className=' sm:text-2xl text-primary font-bold'>
+                        <img src="/images/logo.png" alt="merbello logo" className='w-50 h-20 -ml-4' />
+                    </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className='flex gap-4 font-semibold '>

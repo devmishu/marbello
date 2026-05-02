@@ -43,7 +43,7 @@ const RegisterPage = () => {
     }
 
     return (
-        <div className='min-h-[70vh] flex flex-col justify-center items-center'>
+        <div className='min-h-[80vh] flex flex-col justify-center items-center'>
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <div className="card-body">
                     <h2 className='text-center font-bold text-2xl'>Create Your MERBELLO Acount</h2>

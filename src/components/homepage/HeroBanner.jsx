@@ -8,7 +8,7 @@ const HeroBanner = () => {
             <div className="absolute inset-0 bg-black/20 rounded-xl"></div>
 
             <div className="hero-content text-center relative z-10">
-                <div className="max-w-90 sm:max-w-110 md:max-w-160 border">
+                <div >
                     <h1 className="text-[42px] sm:text-5xl md:text-7xl font-bold text-white shadow ">
                         Discover Your Perfect Aesthetic
                     </h1>

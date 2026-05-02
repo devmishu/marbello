@@ -18,7 +18,7 @@ const RightSidebar = () => {
     return (
         <>
             {
-                isPending ? <div className="navbar-end  gap-3">
+                isPending ? <div className="navbar-end  gap-3 mr-15">
                     <span className="loading loading-spinner loading-xs"></span>
                 </div> :
                     <div className="navbar-end  gap-3">
