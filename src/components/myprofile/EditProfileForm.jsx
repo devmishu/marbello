@@ -45,7 +45,7 @@ const EditProfileForm = ({ user }) => {
                     onClick={() =>
                         document.getElementById("userDataUpdate").showModal()
                     }
-                    className="w-full bg-[#4f46e5] text-white py-2.5  font-semibold hover:bg-[#4338ca] rounded-full"
+                    className="w-full bg-[#4f46e5] text-white py-2.5  font-semibold hover:bg-[#4338ca] rounded-full hover:cursor-pointer"
                 >
                     Edit Profile
                 </button>
