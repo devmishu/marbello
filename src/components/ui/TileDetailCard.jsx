@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const TileDetailCard = ({ image, title, creator, styleDescription, tags, material, dimensions, category, inStock }) => {
+const TileDetailCard = ({ image, title, creator, styleDescription, tags, material, dimensions, category, inStock,currency,price }) => {
     return (
         <div className="lg:grid lg:grid-cols-2 lg:gap-x-12 items-start">
             <div className="w-full rounded-2xl overflow-hidden flex items-center justify-center p-8 ">
@@ -35,7 +35,7 @@ const TileDetailCard = ({ image, title, creator, styleDescription, tags, materia
                 </div>
 
                 <div className="mt-3">
-                    <p className="text-3xl text-[#4f46e5] font-semibold">$45.99 <span className="text-sm text-gray-500 font-normal">/ per sq meter</span></p>
+                    <p className="text-3xl text-[#4f46e5] font-semibold">${price} <span className="text-sm text-gray-500 font-normal">/ per sq meter</span></p>
                 </div>
 
                 

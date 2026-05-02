@@ -34,7 +34,7 @@ const LoginPage = () => {
         });
     }
     return (
-        <div className='min-h-[70vh] flex flex-col justify-center items-center'>
+        <div className='animate__animated animate__backInDown min-h-[70vh] flex flex-col justify-center items-center'>
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
                 <div className="card-body">
                     <h2 className='text-center font-bold text-2xl'>Welcome To MERBELLO</h2>
@@ -44,13 +44,13 @@ const LoginPage = () => {
                             <label className="label " htmlFor='email'>Email</label>
                             <div className="input w-full outline-none rounded-full">
                                 <Mail />
-                                <input type="email" name='email' id='email' placeholder="Enter your email" />
+                                <input required type="email" name='email' id='email' placeholder="Enter your email" />
                             </div>
 
                             <label className="label " htmlFor='password '>Password</label>
                             <div className="input w-full outline-none rounded-full">
                                 <Lock />
-                                <input type="password" name='password' id='password' className='outline-none' placeholder="Enter  Password" />
+                                <input required type="password" name='password' id='password' className='outline-none' placeholder="Enter  Password" />
                             </div>
                             <button type='submit' className='mt-5 btn btn-outline btn-primary hover:bg-transparent hover:text-primary hover:shadow-none rounded-full'>Login</button>
                         </fieldset>

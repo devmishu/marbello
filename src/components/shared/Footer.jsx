@@ -1,12 +1,13 @@
 import { Mail } from 'lucide-react';
+import Image from 'next/image';
 import React from 'react';
 
 const Footer = () => {
     return (
         <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10 justify-between ">
             <aside>
-                <img src="/images/footerlogo.png" alt="footer logo" className='w-50 h-20 -ml-7' />
-                <p>
+                <Image width={200} height={80} src="/images/footerlogo.png" alt="footer logo" className='-ml-7 -my-7' />
+                <p >
                     MERBELLO Industries Ltd.
                     <br />
                     Providing reliable merbel since 1992

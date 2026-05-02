@@ -41,7 +41,7 @@ const EditProfileForm = ({ user }) => {
 
     return (
         <div className='min-h-[70vh] flex flex-col justify-center items-center'>
-            <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
+            <div className="animate__animated animate__backInRight card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
                 <div className="card-body">
                     <h2 className='text-center font-bold text-2xl'>Welcome To MERBELLO</h2>
 
@@ -51,6 +51,7 @@ const EditProfileForm = ({ user }) => {
                         <div className="input w-full outline-none rounded-full">
                             <User2 />
                             <input
+                                required
                                 type="text"
                                 name="name"
                                 placeholder="Your name"

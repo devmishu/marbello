@@ -21,6 +21,8 @@ const TileDetailsPage = async ({ params }) => {
                     dimensions={tileDetails.dimensions}
                     category={tileDetails.category}
                     inStock={tileDetails.inStock}
+                    price={tileDetails.price}
+                    currency={tileDetails.currency}
                 />
             </main>
         </div>
@@ -33,35 +35,32 @@ export default TileDetailsPage;
 
 
 
-category
-:
-"porcelain"
-currency
-:
-"USD"
-description
-:
-"Elegant matte porcelain tile with smooth texture"
-dimensions
-:
-"80x80 cm"
-featured
-:
-true
-id
-:
-"tile_002"
-image
-:
-"https://merbelloapi.onrender.com/images/tile_002.jpg"
-inStock
-:
-true
-material
-:
-"Porcelain"
-price
-:
-52.5
+
+//:
+// "USD"
+// description
+// :
+// "Elegant matte porcelain tile with smooth texture"
+// dimensions
+// :
+// "80x80 cm"
+// featured
+// :
+// true
+// id
+// :
+// "tile_002"
+// image
+// :
+// "https://merbelloapi.onrender.com/images/tile_002.jpg"
+// inStock
+// :
+// true
+// material
+// :
+// "Porcelain"
+// price
+// :
+// 52.5
 
 

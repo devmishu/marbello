@@ -6,15 +6,13 @@ const TilesCard = ({ image, title, id }) => {
 
 
     return (
-        <div className="card bg-base-100  shadow-sm p-2">
+        <div className="animate__animated animate__fadeIn card bg-base-100  shadow-sm p-2">
             <figure className="px-5 pt-5">
                 <Image
                     src={image}
-                    alt="Shoes"
+                    alt={title}
                     width={400}
                     height={400}
-                    placeholder="blur"
-                    blurDataURL={image}
                     className="rounded-xl" />
             </figure>
             <div className="card-body items-center text-center">

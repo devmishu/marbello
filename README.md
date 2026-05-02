@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tiles Gallery
 
-## Getting Started
+A modern and responsive tile gallery web application where users can explore aesthetic tile collections, search by title, view detailed tile information, and manage their profile securely.
 
-First, run the development server:
+## 🔗 Live URL
+
+[https://your-live-site-url.vercel.app](https://your-live-site-url.vercel.app)
+
+---
+
+## 📌 Project Purpose
+
+Tiles Gallery is built to showcase a collection of premium aesthetic tiles in a clean and modern interface.  
+Users can browse featured tiles, explore all available tiles, search specific tile designs, and view detailed information about each tile.  
+The platform also includes secure authentication and profile management for a personalized experience.
+
+---
+
+## ✨ Key Features
+
+- Responsive design for mobile, tablet, and desktop
+- Modern and unique UI based on tile gallery concept
+- Home page with banner, marquee, and featured tiles section
+- All Tiles page with searchable tile gallery
+- Dynamic single tile details page
+- Secure authentication with email/password and Google login
+- User registration with profile image support
+- Protected private routes for tile details and profile
+- My Profile page for viewing logged-in user information
+- Update profile information (name and image)
+- Loading state during data fetching
+- Custom 404 Not Found page
+- Route protection for authenticated users
+- JSON Server for mock tile data management
+- Environment variables for secure configuration
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+
+- Next.js (App Router)
+- React
+- Tailwind CSS
+- DaisyUI
+- HeroUI
+
+### Backend & Database
+
+- BetterAuth
+- MongoDB
+- Mongoose
+- JSON Server
+
+### Authentication
+
+- BetterAuth Credentials Authentication
+- BetterAuth Google Social Login
+
+### Additional Libraries
+
+- React Toastify
+- Animate.css,
+- React Fast Marquee
+- Lucide React
+- React Icons
+
+---
+
+## 📦 NPM Packages Used
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+next
+react
+react-dom
+tailwindcss
+daisyui
+@heroui/react
+better-auth
+mongodb
+mongoose
+react-toastify
+react-fast-marquee
+lucide-react
+json-server
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

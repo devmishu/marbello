@@ -43,7 +43,7 @@ const RegisterPage = () => {
     }
 
     return (
-        <div className='min-h-[80vh] flex flex-col justify-center items-center'>
+        <div className='animate__animated animate__backInDown min-h-[80vh] flex flex-col justify-center items-center'>
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <div className="card-body">
                     <h2 className='text-center font-bold text-2xl'>Create Your MERBELLO Acount</h2>
@@ -55,27 +55,27 @@ const RegisterPage = () => {
                             <label className="label" htmlFor='name'>Name</label>
                             <div className="input w-full outline-none rounded-full">
                                 <User2 />
-                                <input type="text" name='name' id='name' placeholder="Enter your name" />
+                                <input required type="text" name='name' id='name' placeholder="Enter your name" />
                             </div>
 
                             <label className="label" htmlFor='image'>Image Url</label>
                             <div className="input w-full outline-none rounded-full">
                                 <Link2 />
-                                <input type="url" name='image' id='image' className="input w-full" placeholder="Enter your image url" />
+                                <input type="url" name='image' id='image'  placeholder="Enter your image url" />
                             </div>
 
                             <label className="label" htmlFor='email'>Email</label>
                             <div className="input w-full outline-none rounded-full">
                                 <Mail />
-                                <input type="email" name='email' id='email' placeholder="Enter your email" />
+                                <input required type="email" name='email' id='email' placeholder="Enter your email" />
                             </div>
 
                             <label className="label" htmlFor='password'>Password</label>
                             <div className="input w-full outline-none rounded-full">
                                 <Lock />
-                                <input type="password" name='password' id='password' className='outline-none' placeholder="Enter  Password" />
+                                <input required type="password" name='password' id='password' className='outline-none' placeholder="Enter  Password" />
                             </div>
-                            <button type='submit' className='mt-5 btn btn-outline btn-primary hover:bg-transparent hover:text-primary hover:shadow-none rounded-full'>Regester</button>
+                            <button type='submit' className='mt-5 btn btn-outline btn-primary hover:bg-transparent hover:text-primary hover:shadow-none rounded-full'>Register</button>
                         </fieldset>
                     </form>
 

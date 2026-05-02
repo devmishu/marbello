@@ -16,9 +16,9 @@ const ProfileCard = () => {
 
 
     return (
-        <div className="min-h-[80vh] bg-gray-50 flex items-center justify-center p-6 ">
-            {/* Profile Card Container */}
-            <div className="max-w-sm w-full bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+        <div className=" min-h-[80vh] bg-gray-50 flex items-center justify-center p-6 ">
+          
+            <div className="animate__animated animate__backInLeft max-w-sm w-full bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
 
                 {/* Top Decorative Banner (Theme Matching Purple) */}
                 <div className="h-24 bg-primary"></div>
@@ -55,7 +55,7 @@ const ProfileCard = () => {
                         </div>
                     </div>
 
-                    <div className="mt-8 flex flex-col space-y-3"> 
+                    <div className="mt-8 flex flex-col space-y-3">
                         <Link href={'/updateuser'}>
                             <button
 
@@ -72,7 +72,7 @@ const ProfileCard = () => {
                             Logout
                         </button>
                     </div>
-                    {/* <EditProfileForm user={user} /> */}
+  
                 </div>
 
             </div>

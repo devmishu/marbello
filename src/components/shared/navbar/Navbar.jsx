@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 import RightSidebar from './RightSidebar';
 import NavLink from './NavLink';
+import Image from 'next/image';
 
 const Navbar = async () => {
 
@@ -29,7 +30,7 @@ const Navbar = async () => {
                         </ul>
                     </div>
                     <Link href="/" className=' sm:text-2xl text-primary font-bold'>
-                        <img src="/images/logo.png" alt="merbello logo" className='w-50 h-20 -ml-4' />
+                        <Image width={200} height={80} src="/images/logo.png" alt="merbello logo" className='w-50 h-20 -ml-4' />
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
