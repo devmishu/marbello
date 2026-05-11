@@ -4,7 +4,7 @@ A modern and responsive tile gallery web application where users can explore aes
 
 ## 📸 Project Screenshot
 
-![Tiles Gallery Screenshot](./public/images/app-preview.png)
+![Tiles Gallery Screenshot](./public/images/app-preview.webp)
 
 ## 🔗 Live URL
 
